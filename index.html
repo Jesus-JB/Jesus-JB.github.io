@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazones para Ti</title>
+    <meta name="language" content="es">
+    <meta name="title" content="Corazones para Ti">
+    <meta name="description" content="Un mensaje especial lleno de amor y cariño para ti">
+    <meta name="theme-color" content="#c40908">
+    <link rel="icon" type="image/x-icon" href="images/heart.png">
+    <link rel="stylesheet" href="css/love.css">
+</head>
+
+
+<body>
+
+    <audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
+        <source src="MP3/1.mp3" />
+    </audio>
+
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+        <div class="body_left">
+            <img src="images/biubiubiu.gif" alt="" ondragstart='return false;'>
+        </div>
+
+        <div class="body_center love">
+            <div class="block">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="messages-section">
+        <div class="messages-container">
+            <div class="messages-list" id="messagesList"></div>
+            <div class="message-input-container">
+                <input type="text" id="messageInput" placeholder="Escribe un mensaje..." maxlength="100">
+                <button id="sendMessage">💌</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="border">
+            <div class="border-top"></div>
+            <div class="border-bottom"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/love.js"></script>
+
+</body>
+
+</html>
