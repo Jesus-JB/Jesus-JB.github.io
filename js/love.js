@@ -262,7 +262,7 @@ document.addEventListener('keydown', (e) => {
 const heartImages = {};
 
 // Asignar imágenes a cada corazón
-for (let i = 0; i < 24; i++) {
+for (let i = 0; i < 34; i++) {
     // Usar las imágenes .jpg en orden, empezando desde 1.jpg
     heartImages[i] = `images/${i + 1}.jpg`;
 }
