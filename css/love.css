@@ -26,6 +26,40 @@
     padding: 0;
     border: 0;
 }
+.special-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    text-align: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid var(--button-border);
+    box-shadow: 0 4px 15px var(--shadow-color);
+    animation: messageFloat 3s ease-in-out infinite;
+}
+
+.special-message h1 {
+    margin: 0;
+    color: var(--heart-color);
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    letter-spacing: 1px;
+}
+
+@keyframes messageFloat {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
 .icon-love {
     width: 400px;
 }
